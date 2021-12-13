@@ -131,3 +131,15 @@ npm install -g json-server
 ```sh
 json-server --watch db.json
 ```
+
+## Create service to get data
+
+- añadir el HttpClientModule, en el app.module
+
+```sh
+ng g s heroes/services/heroes --skip-tests
+```
+
+## Get interfaces
+
+https://quicktype.io/
