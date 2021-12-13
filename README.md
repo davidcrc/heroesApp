@@ -85,3 +85,11 @@ ng g c heroes/pages/listado --skip-tests -is
 ```sh
 ng g c shared/errorPage --skip-tests -is
 ```
+
+## Routes
+
+- flat: no creara una carpeta para el module
+
+```sh
+ng g m appRouting --flat
+```
