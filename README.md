@@ -107,3 +107,9 @@ ng g m heroes/heroesRouting --flat
 ```
 
 # <!-- All Routes basic and lazy load -->
+
+## Install flex layout ( better option )
+
+```sh
+npm i -s @angular/flex-layout @angular/cdk
+```
