@@ -117,3 +117,17 @@ npm i -s @angular/flex-layout @angular/cdk
 ## Link to icns
 
 - https://fonts.google.com/icons?selected=Material+Icons:bookmark
+
+## Fast backend
+
+- https://www.npmjs.com/package/json-server
+
+```sh
+npm install -g json-server
+```
+
+- create folder with db.json and execute
+
+```sh
+json-server --watch db.json
+```
