@@ -99,3 +99,9 @@ ng g m appRouting --flat
 ```sh
 ng g m auth/authRouting --flat
 ```
+
+## Internal heroes routes
+
+```sh
+ng g m heroes/heroesRouting --flat
+```
