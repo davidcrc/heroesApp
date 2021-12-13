@@ -37,3 +37,51 @@ ng add @angular/material
 - Global typo: yes
 
 -Browser animation setup: yes
+
+## Basic modules
+
+```sh
+ng g m auth
+```
+
+```sh
+ng g m heroes
+```
+
+```sh
+ng g m material
+```
+
+## Basic Components
+
+```sh
+ng g c auth/pages/login --skip-tests -is
+```
+
+```sh
+ng g c auth/pages/registro --skip-tests -is
+```
+
+```sh
+ng g c heroes/pages/agregar --skip-tests -is
+```
+
+```sh
+ng g c heroes/pages/buscar --skip-tests -is
+```
+
+```sh
+ng g c heroes/pages/heroe --skip-tests -is
+```
+
+```sh
+ng g c heroes/pages/home --skip-tests -is
+```
+
+```sh
+ng g c heroes/pages/listado --skip-tests -is
+```
+
+```sh
+ng g c shared/errorPage --skip-tests -is
+```
