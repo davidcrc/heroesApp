@@ -93,3 +93,9 @@ ng g c shared/errorPage --skip-tests -is
 ```sh
 ng g m appRouting --flat
 ```
+
+## Internal auth routes
+
+```sh
+ng g m auth/authRouting --flat
+```
