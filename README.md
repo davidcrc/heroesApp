@@ -105,3 +105,5 @@ ng g m auth/authRouting --flat
 ```sh
 ng g m heroes/heroesRouting --flat
 ```
+
+# <!-- All Routes basic and lazy load -->
