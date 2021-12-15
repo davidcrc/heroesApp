@@ -149,3 +149,9 @@ https://quicktype.io/
 ```sh
 ng g c heroes/components/heroeTarjeta --skip-tests -is
 ```
+
+## Create PipeImagen
+
+```sh
+ng g pipe heroes/pipes/imagen --skip-tests
+```
