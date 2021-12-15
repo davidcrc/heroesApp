@@ -143,3 +143,9 @@ ng g s heroes/services/heroes --skip-tests
 ## Get interfaces
 
 https://quicktype.io/
+
+## Heore component
+
+```sh
+ng g c heroes/components/heroeTarjeta --skip-tests -is
+```
