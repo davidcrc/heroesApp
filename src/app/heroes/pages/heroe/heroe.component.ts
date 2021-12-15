@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-heroe',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styles: [],
 })
 export class HeroeComponent implements OnInit {
-  constructor() {}
+  constructor(private activatedRoute: ActivatedRoute) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.activatedRoute.params.subscribe(({ id }) => {
+      console.log('params', id);
+    });
+  }
 }
