@@ -7,7 +7,14 @@ import { HeroesService } from '../../services/heroes.service';
 @Component({
   selector: 'app-agregar',
   templateUrl: './agregar.component.html',
-  styles: [],
+  styles: [
+    `
+      img {
+        width: 100%;
+        border: 5px;
+      }
+    `,
+  ],
 })
 export class AgregarComponent implements OnInit {
   publishers = [
@@ -31,6 +38,8 @@ export class AgregarComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    if (!this.router.url.includes('editar')) return;
+
     this.activatedRoute.params
       .pipe(switchMap(({ id }) => this.heroesService.getHeroeById(id)))
       .subscribe((heroe) => (this.heroe = heroe));
