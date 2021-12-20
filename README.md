@@ -155,3 +155,23 @@ ng g c heroes/components/heroeTarjeta --skip-tests -is
 ```sh
 ng g pipe heroes/pipes/imagen --skip-tests
 ```
+
+<!-- =========================== -->
+
+## Contenido seccion 13 - finished
+
+- Angular Material
+
+- Interfaces y tipado
+
+- Pipes personalizados
+
+- Variables de entorno
+
+- Autocomplete de AngularMaterial
+
+- Peticiones HTTP
+
+- JSON-Server
+
+- Angular Flex y Flexbox
