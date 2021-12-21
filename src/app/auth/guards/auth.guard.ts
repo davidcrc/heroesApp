@@ -20,13 +20,16 @@ export class AuthGuard implements CanActivate, CanLoad {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
-  ):
-    | Observable<boolean | UrlTree>
-    | Promise<boolean | UrlTree>
-    | boolean
-    | UrlTree {
+  ): Observable<boolean> | Promise<boolean> | boolean {
+    if (this.authService.auth.id) {
+      return true;
+    }
+
+    console.log('bloqueado en canActivate');
+
     return true;
   }
+
   canLoad(
     route: Route,
     segments: UrlSegment[]
