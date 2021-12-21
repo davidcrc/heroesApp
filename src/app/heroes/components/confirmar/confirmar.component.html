@@ -1,14 +1,15 @@
-<h1>Estas seguro??</h1>
+<div fxLayout="column">
+  <h1>Estas seguro??</h1>
 
-<hr />
+  <hr />
+  <div fxLayout="column">
+    <p>
+      Esta apunto de borrar a {{ data.superhero }}
+      <br />
+      Desea continuar?
+    </p>
 
-<p>
-  Esta apunto de borrar a xxx
-  <br />
-  Desea continuar?
-</p>
-
-<div>
-  <button mat-button (click)="borrar()" color="warn">Si, adelante!!</button>
-  <button mat-button (click)="cerrar()">No, cancelar</button>
+    <button mat-button (click)="borrar()" color="warn">Si, adelante!!</button>
+    <button mat-button (click)="cerrar()">No, cancelar</button>
+  </div>
 </div>
