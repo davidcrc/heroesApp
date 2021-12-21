@@ -207,3 +207,14 @@ ng g c heroes/components/confirmar --skip-tests -is
 ```sh
 ng g s auth/services/auth
 ```
+
+## Guard - service
+
+```sh
+ng g guard auth/guards/auth --skip-tests
+```
+
+select:
+
+- CanActivate
+- CanLoad

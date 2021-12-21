@@ -15,7 +15,7 @@ export class LoginComponent {
       console.log(resp);
       if (resp.id) {
         // Preguntar por el usuario
-        this.router.navigate(['/heroes']);
+        this.router.navigate(['./heroes']);
       }
     });
   }
