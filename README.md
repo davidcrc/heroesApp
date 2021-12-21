@@ -181,3 +181,23 @@ ng g pipe heroes/pipes/imagen --skip-tests
 ```sh
 ng g c heroes/components/confirmar --skip-tests -is
 ```
+
+## Contenido seccion 14 - finished
+
+- CRUD
+
+  - Create
+
+  - Read
+
+  - Update
+
+  - Delete
+
+- Pipes puros e impuros
+
+- Snacks
+
+- Dialogs
+
+- Inyección de servicios manualmente
