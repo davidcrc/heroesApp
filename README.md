@@ -201,3 +201,9 @@ ng g c heroes/components/confirmar --skip-tests -is
 - Dialogs
 
 - Inyección de servicios manualmente
+
+## Auth service
+
+```sh
+ng g s auth/services/auth
+```
