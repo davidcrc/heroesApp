@@ -175,3 +175,9 @@ ng g pipe heroes/pipes/imagen --skip-tests
 - JSON-Server
 
 - Angular Flex y Flexbox
+
+## Dialog component
+
+```sh
+ng g c heroes/components/confirmar --skip-tests -is
+```
