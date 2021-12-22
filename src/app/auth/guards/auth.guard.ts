@@ -4,18 +4,18 @@ import {
   CanActivate,
   CanLoad,
   Route,
+  Router,
   RouterStateSnapshot,
   UrlSegment,
-  UrlTree,
 } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import { AuthService } from '../services/auth.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthGuard implements CanActivate, CanLoad {
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   canActivate(
     route: ActivatedRouteSnapshot,
@@ -27,19 +27,30 @@ export class AuthGuard implements CanActivate, CanLoad {
 
     console.log('bloqueado en canActivate');
 
-    return true;
+    return this.authService.verificaAuthenticacion().pipe(
+      tap((estaAuthenticado) => {
+        if (!estaAuthenticado) {
+          this.router.navigate(['./auth/login']);
+        }
+      })
+    );
   }
 
-  canLoad(
-    route: Route,
-    segments: UrlSegment[]
-  ): Observable<boolean> | Promise<boolean> | boolean {
+  canLoad(route: Route, segments: UrlSegment[]): Observable<boolean> | boolean {
     // console.log('caload', true);
     // console.log('route', route);
     // console.log('segments', segments);
 
     // return true;
 
-    return this.authService.auth.id ? true : false;
+    // return this.authService.auth.id ? true : false;
+
+    return this.authService.verificaAuthenticacion().pipe(
+      tap((estaAuthenticado) => {
+        if (!estaAuthenticado) {
+          this.router.navigate(['./auth/login']);
+        }
+      })
+    );
   }
 }

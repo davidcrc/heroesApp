@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
 
   logOut() {
     // Preguntar por el usuario
+    this.authService.logOut();
     this.router.navigate(['/auth']);
   }
 
