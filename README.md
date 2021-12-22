@@ -218,3 +218,23 @@ select:
 
 - CanActivate
 - CanLoad
+
+<!-- ================================================================ -->
+
+## Section 15 - finished
+
+- Protección de rutas
+
+- Rutas privadas
+
+- Rutas públicas
+
+- Servicio de autenticación
+
+- Guards
+
+- CanActivate
+
+- Can Load
+
+- Mantener la sesión del usuario
